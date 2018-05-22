@@ -9,7 +9,6 @@ def now_serving(katz_deli)
   else
     puts "Currently serving #{katz_deli.shift}."
   end
-
 end
 
 def line(katz_deli)
@@ -21,9 +20,6 @@ def line(katz_deli)
     katz_deli.each_with_index do |value, index|
       message += " #{index.to_i+1}. #{value}"
     end
-
     puts "#{message}"
   end
-
-
 end
